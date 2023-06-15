@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uploadingfiles</title>
+    <link rel="stylesheet" href="./uploadingFiles.css" />
+  </head>
+  <body>
+    <h1>Загрузка файлов</h1>
+
+    <form id="form">
+      <div id="fileInputWrapper">
+        <input type="file" id="fileInput" multiple />
+        <label for="fileInput" id="fileInputLabel">Выберите файлы</label>
+      </div>
+      <button class="submit" type="submit">Отправить</button>
+    </form>
+
+    <div id="fileList" class="printFile"></div>
+
+    <script src="./uploadingFiles.js"></script>
+  </body>
+</html>
