@@ -5,8 +5,16 @@ const fileInput = document.getElementById("fileInput");
 const fileList = document.getElementById("fileList");
 const files = fileInput.files; // Обновляем список файлов
 
+// Очищаем список файлов перед обновлением
+function clearList() {
+  while (fileList.firstChild) {
+    fileList.firstChild.remove();
+  }
+}
+
 fileInput.addEventListener("change", function () {
-  fileList.innerHTML = ""; // Очищаем список файлов перед обновлением
+  clearList();
+  
   const files = fileInput.files; // Обновляем список файлов
   for (let i = 0; i < files.length; i++) {
     const file = files[i];
